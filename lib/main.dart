@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iot_third_mobile_phone/views/welcome_ui.dart';
+import 'package:iot_third_mobile_phone/views/login_ui.dart';
  
 void main() {
   runApp(
@@ -20,7 +20,7 @@ class _IoTSAUFirstState extends State<IoTSAUFirst> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomeUi(),
+      home: LoginUI(),
     );
   }
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:iot_third_mobile_phone/views/login_ui.dart';
+import 'package:iot_third_mobile_phone/views/signup_ui.dart';
 
 class WelcomeUi extends StatefulWidget {
   const WelcomeUi({super.key});
@@ -46,9 +48,17 @@ class _WelcomeUiState extends State<WelcomeUi> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LoginUI(),
+                      ),
+                    );
+                  },
+                  
                   child: Text(
-                    'Login',
+                    'LOGIN',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
@@ -70,9 +80,16 @@ class _WelcomeUiState extends State<WelcomeUi> {
                   width: MediaQuery.of(context).size.width * 0.035,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                   Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignupUi(),
+                      ),
+                    );
+                  },
                   child: Text(
-                    'Sign Up',
+                    'SIGN UP',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
