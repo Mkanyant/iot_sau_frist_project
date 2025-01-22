@@ -190,7 +190,21 @@ class _LoginUIState extends State<LoginUI> {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [],
+                children: [
+                  Text(
+                    'Don\'t have an acount?',
+                  ),
+                  TextButton(
+                    onPressed: (){},
+                    child: Text(
+                      'Signup',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
               )
             ],
           ),
